@@ -1,10 +1,10 @@
 % See also https://tex.stackexchange.com/a/19505
-\documentclass[paper=6in:9in,pagesize=pdftex,headinclude=on,footinclude=on,12pt]{book}
+\documentclass[paper=6in:9in,pagesize=pdftex,headinclude=on,footinclude=on,12pt]{memoir}
 
 \usepackage{hyperref, booktabs, longtable, graphicx}
 \hypersetup{
   colorlinks = true,  % Colours links instead of ugly boxes
-  urlcolor   = blue,  % Colour for external hyperlinks
+  urlcolor   = black,  % Colour for external hyperlinks
   linkcolor  = black, % Colour of internal links
   citecolor  = black  % Colour of citations
 }
@@ -13,10 +13,41 @@
 \author{George Gissing}
 \date{1889}
 
+\aliaspagestyle{title}{empty}
+\aliaspagestyle{part}{empty}
+
 \begin{document}
 
 \maketitle
+
+\clearpage
+\begin{vplace}
+\begin{center}
+\small
+\emph{From \textbf{Wikisource}, the free library.}
+
+~
+
+This edition has been produced from the Wikisource edition at
+
+\url{https://en.wikisource.org/wiki/The_Nether_World}
+
+which was produced from the Smith, Elder, \& Co. (London) edition of 1889.
+
+~
+
+Please report any errors at:
+
+\url{https://github.com/wikisource/en__The_Nether_World}
+
+\end{center}
+\end{vplace}
+
+\frontmatter
+
 \tableofcontents
+
+\mainmatter
 
 \include{./latex/001_The_Nether_World__Volume_1__Chapter_1}
 \include{./latex/002_The_Nether_World__Volume_1__Chapter_2}
