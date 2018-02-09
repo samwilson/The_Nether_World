@@ -1,7 +1,11 @@
 % See also https://tex.stackexchange.com/a/19505
 \documentclass[paper=6in:9in,pagesize=pdftex,headinclude=on,footinclude=on,12pt]{memoir}
 
-\usepackage{hyperref, booktabs, longtable, graphicx}
+\usepackage{booktabs, longtable, graphicx}
+\usepackage[pdftex,
+            pdfauthor={George Gissing},
+            pdftitle={The Nether World},
+]{hyperref}
 \hypersetup{
   colorlinks = true,  % Colours links instead of ugly boxes
   urlcolor   = black,  % Colour for external hyperlinks
@@ -9,9 +13,23 @@
   citecolor  = black  % Colour of citations
 }
 
-\title{The Nether World}
-\author{George Gissing}
-\date{1889}
+\title{
+\Huge{The Nether World}
+
+\vspace{2cm}
+
+\LARGE{By George Gissing}
+
+\vspace{1cm}
+
+\large{1889}
+
+\vfill
+
+\includegraphics[width=0.15\textwidth]{Wikisource-logo-fr-en}
+}
+
+\date{}
 
 \aliaspagestyle{title}{empty}
 \aliaspagestyle{part}{empty}
@@ -26,22 +44,24 @@
 \small
 \emph{From \textbf{Wikisource}, the free library.}
 
-~
+\vspace{2cm}
 
 This edition has been produced from the Wikisource edition at
 
 \url{https://en.wikisource.org/wiki/The_Nether_World}
 
-which was produced from the Smith, Elder, \& Co. (London) edition of 1889.
+which was produced from the Smith, Elder, \& Co.\ (London) edition of 1889.
 
 ~
 
 Please report any errors at:
 
-\url{https://github.com/wikisource/en__The_Nether_World}
+\url{https://github.com/samwilson/The_Nether_World}
 
 \end{center}
 \end{vplace}
+
+\clearpage
 
 \frontmatter
 
